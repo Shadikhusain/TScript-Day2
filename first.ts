@@ -16,3 +16,29 @@ val2="Rohit";
 val2=10;
 if(typeof val2==='string') //unknown mei pehle value ko consume kerna hoga ki kya ye ('string') hai ya nahi hai
 console.log(val2.toUpperCase());
+
+if(typeof val2==='number')
+    console.log(val2.toFixed(2));
+
+// Array define in typescript 
+// Non primitive data type
+let arr:number[]=[2,4,5,7,11];
+let arr2=[2,1,9,10];
+
+let arr3:(string | number)[]=["Shadik",20,11,"Sohan"];
+// arr3.push(true); // error dega
+arr3.push(10);
+console.log(arr3);
+
+// tuples:-
+
+let tuple:[string,number,number]=["rohit",20,30];
+console.log(tuple);
+
+// object define in typescript
+
+let obj1:{name:string,age:number,gender:string}={
+    name:"rohit",
+    age:20,
+    gender:"male",
+}
