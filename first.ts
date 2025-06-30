@@ -37,8 +37,47 @@ console.log(tuple);
 
 // object define in typescript
 
+// esko inline object bolte hai
 let obj1:{name:string,age:number,gender:string}={
     name:"rohit",
     age:20,
     gender:"male",
+}
+
+// (ii)
+let person:{name:string,age:number,balance:number}
+person={
+    name:"shadik",
+    age:20,
+    balance:420,
+}
+
+
+// (iii) Aliases
+type customer={
+    name:string,
+    age:number,
+    id:string,
+}
+let c1:customer={
+name:"shadik",
+age:20,
+id:"fshd",
+};
+
+
+// interface humesha multiple time likhne ke baad automatic (merge) ho jaata hai
+interface admin{ //interface multiple times and then automatic merge
+name:string,
+age:number,
+position:string,
+};
+interface admin{ //interface multiple times use and then (merge)
+    id:number,
+};
+let obj3:admin={
+    name:"shdik",
+    age:20,
+    position:"manager",
+    id:2023,
 }

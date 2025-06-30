@@ -27,8 +27,28 @@ console.log(arr3);
 let tuple = ["rohit", 20, 30];
 console.log(tuple);
 // object define in typescript
+// esko inline object bolte hai
 let obj1 = {
     name: "rohit",
     age: 20,
     gender: "male",
+};
+// (ii)
+let person;
+person = {
+    name: "shadik",
+    age: 20,
+    balance: 420,
+};
+let c1 = {
+    name: "shadik",
+    age: 20,
+    id: "fshd",
+};
+
+let obj3 = {
+    name: "shdik",
+    age: 20,
+    position: "manager",
+    id: 2023,
 };
